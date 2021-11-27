@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>الباحث القرآني</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+		/>
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300;700&display=swap");
+			body {
+				font-size: 2em;
+				font-family: "Noto Kufi Arabic", sans-serif;
+			}
+		</style>
+	</head>
+	<body
+		class="
+			w-screen
+			h-screen
+			flex
+			justify-center
+			md:items-center
+			flex-col
+			bg-gray-300
+		"
+	>
+		<div class="md:w-2/3 mx-4 shadow-md">
+			<form id="dataform" class="round-xs bg-white p-5 w-full">
+				<legend class="text=lg mb-5 font-bold">الباحث القرآني</legend>
+				<div class="flex justify-between items-center">
+					<label for="surah" class="font-bold">السورة</label>
+					<select
+						class="border p-2 mr-2 w-1/2"
+						name="surah"
+						id="surah"
+					></select>
+				</div>
+				<div class="flex justify-between items-center">
+					<label for="aya" class="font-bold">الآية</label>
+					<input
+						class="border p-2 mr-2 w-1/2"
+						min="1"
+						value="1"
+						type="number"
+						id="aya"
+						name="aya"
+					/>
+				</div>
+				<input
+					class="font-bold p-2 w-full bg-blue-400 text-blue-100 cursor-pointer"
+					type="submit"
+					value="إبحث"
+				/>
+			</form>
+		</div>
+		<div
+			id="result"
+			class="bg-white round-xs p-5 mt-5 md:w-2/3 text-gray-500 mx-4 shadow-md"
+		>
+			لا توجد نتائج حاليا...
+			<br />
+			إملء الخانات أعلاه للحصول على نتائج
+		</div>
+		<script src="./index.js"></script>
+	</body>
+</html>

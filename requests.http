@@ -1,0 +1,15 @@
+GET http://localhost:5000/quran HTTP/2.0
+###
+GET http://localhost:5000/randomSurah HTTP/2.0
+###
+GET http://localhost:5000/randomAya HTTP/2.0
+###
+GET http://localhost:5000/البقرة HTTP/2.0
+###
+GET http://localhost:5000/الناس HTTP/2.0
+###
+GET http://localhost:5000/آل عمران/5 HTTP/2.0
+###
+GET http://localhost:5000/قريش/3 HTTP/2.0
+###
+GET http://localhost:5000/createPost HTTP/2.0
